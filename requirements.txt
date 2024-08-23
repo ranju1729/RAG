@@ -1,0 +1,3 @@
+pyPDF2
+ollama
+pip install scikit-learn
