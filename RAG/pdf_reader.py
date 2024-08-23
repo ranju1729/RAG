@@ -1,5 +1,11 @@
 import PyPDF2
 import os
+from langchain_community.document_loaders import PyPDFDirectoryLoader
+
+
+def load_documents(dir):
+    document_loader = PyPDFDirectoryLoader(dir)
+    return document_loader.load()
 
 
 class PdfExtracter():
